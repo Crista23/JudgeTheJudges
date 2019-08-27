@@ -1,0 +1,341 @@
+<!-- Bootstrap v3.0.3 -->
+<link href="https://s3.amazonaws.com/mturk-public/bs30/css/bootstrap.min.css" rel="stylesheet" />
+<p><input name="gotcha_locs" type="hidden" value="${gotcha_locs}" /> <input name="gotcha_answers" type="hidden" value="${gotcha_answers}" /> <input name="hit_id" type="hidden" value="${hit_id}" /> <script type="text/javascript">
+function numreviews()
+{
+    return 21
+}
+
+function setVal(varName,val)
+{
+	document.getElementsByName(varName)[0].value = val
+}
+
+</script></p>
+
+<section class="container" id="Other" style="margin-bottom:15px; padding: 10px 10px; font-family: Verdana, Geneva, sans-serif; color:#333333; font-size:0.9em;">
+<div class="row col-xs-12 col-md-12"><!-- Instructions -->
+<div class="panel panel-primary">
+<div class="panel-heading"><strong>Instructions</strong></div>
+
+<div class="panel-body">
+<p><b><u>Please note</u>: In this study we promise we will pay you $1.5 per HIT if you participate in <font color="red">one and only one</font> HIT and your HIT is accepted.<br />
+We estimate it will take you 12-15 mins to finish it. If you participate in multiple HITS, you will not receive additional money.</b></p>
+&nbsp;
+
+<p>Below are twenty one paragraphs extracted from product reviews. Some of these reviews were written by real people, and some of them were written automatically by a bot.</p>
+
+<p>For each review, try to decide if it is <b>real</b> (written by a person) or <b>fake</b> (written by a computer algorithm).</p>
+<!-- <p>Every review, both real and fake, has been converted to lower case, and has spaces between every token. Some of the words in both real and fake reviews have been replaced on purpose with a special "<unk>" symbol. Try not to let this normalization affect your judgment. </p> -->
+
+<p>Please note that we have converted text in both real and fake reviews to lower case and inserted space between tokens (i.e., words or punctuation). We intentionally marked words and symbols that do not commonly appear in reviews to make the comparison fair. These marked tokens can be seen in both real and fake reviews.<br />
+For example, the review below can be either real or fake, please don't judge the reviews based on the marked tokens:</p>
+
+<blockquote><i>i probably enjoy the characters very much , __ and the action coming out .</i></blockquote>
+
+<p>&nbsp;</p>
+<!-- <p> We have also replaced some words in both real and fake reviews with a special "<unk>" symbol on purpose. </p> --><!-- <p>Be a little careful--one or more of the reviews may explicitly state that it is real or fake in its text. Where this happens, you should mark it as such. </p> -->
+
+<p>Be careful -- one or more of the reviews may explicitly state that it is real or fake in its text. Where this happens, you should mark it as such.</p>
+<!-- <p>Finally, this is a scientific study to see how well our automatic text generation method works. That being the case, <b>please don't do more than <font color="red">one</font>  HIT</b>, as
+we need unique participants to obtain results that we can generalize. Please accept the HIT before you start working on the task.<br /> <b><font color="red">Any HIT you complete after the first will not be accepted.</font></b></p> -->
+
+<p>To recap, I'll accept your HIT if:</p>
+
+<ul>
+	<li>You haven't already had a HIT accepted in this project;</li>
+	<li>You make a judgment about every review;</li>
+	<li>You correctly mark reviews as fake or real when it is obviously indicated in the review.</li>
+	<!-- <li>You mark reviews as fake or real when they specifically tell you that they are so</li> -->
+</ul>
+
+<p>&nbsp;</p>
+</div>
+</div>
+<!-- End Instructions --><!-- Content Body -->
+
+<section>
+<div class="panel-body">
+<ol>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_0_text} <input name="{review_0_student_model}" type="hidden" value="${review_0_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_0_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_0_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_1_text} <input name="{review_1_student_model}" type="hidden" value="${review_1_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_1_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_1_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_2_text} <input name="{review_2_student_model}" type="hidden" value="${review_2_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_2_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_2_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_3_text} <input name="{review_3_student_model}" type="hidden" value="${review_3_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_3_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_3_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_4_text} <input name="{review_4_student_model}" type="hidden" value="${review_4_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_4_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_4_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_5_text} <input name="{review_5_student_model}" type="hidden" value="${review_5_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_5_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_5_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_6_text} <input name="{review_6_student_model}" type="hidden" value="${review_6_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_6_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_6_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_7_text} <input name="{review_7_student_model}" type="hidden" value="${review_7_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_7_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_7_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_8_text} <input name="{review_8_student_model}" type="hidden" value="${review_8_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_8_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_8_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_9_text} <input name="{review_9_student_model}" type="hidden" value="${review_9_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_9_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_9_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_10_text} <input name="{review_10_student_model}" type="hidden" value="${review_10_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_10_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_10_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_11_text} <input name="{review_11_student_model}" type="hidden" value="${review_11_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_11_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_11_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_12_text} <input name="{review_12_student_model}" type="hidden" value="${review_12_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_12_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_12_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_13_text} <input name="{review_13_student_model}" type="hidden" value="${review_13_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_13_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_13_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_14_text} <input name="{review_14_student_model}" type="hidden" value="${review_14_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_14_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_14_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_15_text} <input name="{review_15_student_model}" type="hidden" value="${review_15_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_15_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_15_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_16_text} <input name="{review_16_student_model}" type="hidden" value="${review_16_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_16_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_16_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_17_text} <input name="{review_17_student_model}" type="hidden" value="${review_17_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_17_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_17_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_18_text} <input name="{review_18_student_model}" type="hidden" value="${review_18_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_18_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_18_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_19_text} <input name="{review_19_student_model}" type="hidden" value="${review_19_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_19_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_19_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+	<li>
+	<fieldset>
+	<p><b>Review:</b> ${review_20_text} <input name="{review_20_student_model}" type="hidden" value="${review_20_student_model}" /></p>
+
+	<p><b>Your judgement:</b></p>
+
+	<div class="radio"><label><input name="review_20_judgment" type="radio" value="real" />Real</label></div>
+
+	<div class="radio"><label><input name="review_20_judgment" type="radio" value="fake" />Fake</label></div>
+	</fieldset>
+	</li>
+</ol>
+</div>
+
+<div class="panel-heading"><strong>Demographic information</strong></div>
+
+<div class="panel-body">
+<fieldset><label>My gender is:</label>
+
+<div class="radio"><label><input name="gender" type="radio" value="female" />Female</label></div>
+
+<div class="radio"><label><input name="gender" type="radio" value="male" />Male</label></div>
+
+<div class="radio"><label><input name="gender" type="radio" value="other" />Other</label></div>
+
+<div class="radio"><label><input name="gender" type="radio" value="noanswer" />Prefer not to answer</label></div>
+</fieldset>
+
+<fieldset><label>My age is:</label>
+
+<div class="radio"><label><input name="age" type="radio" value="15to24" />15 to 24</label></div>
+
+<div class="radio"><label><input name="age" type="radio" value="25to44" />25 to 44</label></div>
+
+<div class="radio"><label><input name="age" type="radio" value="45to64" />45 to 64</label></div>
+
+<div class="radio"><label><input name="age" type="radio" value="65plus" />65+</label></div>
+
+<div class="radio"><label><input name="age" type="radio" value="noanswer" />Prefer not to answer</label></div>
+</fieldset>
+
+<fieldset><label>My English language proficiency is:</label>
+
+<div class="radio"><label><input name="language" type="radio" value="native" />Native</label></div>
+
+<div class="radio"><label><input name="language" type="radio" value="fluent" />Fluent</label></div>
+
+<div class="radio"><label><input name="language" type="radio" value="proficient" />Proficient</label></div>
+
+<div class="radio"><label><input name="language" type="radio" value="partial" />Partial</label></div>
+
+<div class="radio"><label><input name="language" type="radio" value="noanswer" />Prefer not to answer</label></div>
+</fieldset>
+</div>
+
+<fieldset><label>(Optional) For the reviews that you annotated as fake, why do you generally believe they are fake?</label><textarea class="form-control" cols="120" name="comment" rows="5"></textarea></fieldset>
+</section>
+<!-- End Content Body --></div>
+</section>
+<!-- close container -->
+<style type="text/css">fieldset { padding: 10px; background:#fbfbfb; border-radius:5px; margin-bottom:5px; }
+</style>

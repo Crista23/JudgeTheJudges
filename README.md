@@ -1,9 +1,9 @@
-***Judge the Judges: A Large-Scale Evaluation Study of Neural Language Models for Online Review Generation***
+# Judge the Judges: A Large-Scale Evaluation Study of Neural Language Models for Online Review Generation
 
 This repository contains the experimental setup, data and annotations.
 
-**Citation**
-
+# Citation
+```
 @InProceedings{
   author = 	"Garbacea, Cristina and Carton, Samuel and Yan, Shiyan, and Mei, Qiaozhu",
   title = 	"Judge the Judges: A Large-Scale Evaluation Study of Neural Language Models for Online Review Generation",
@@ -14,3 +14,4 @@ This repository contains the experimental setup, data and annotations.
   location = 	"Hong Kong",
   url = 	"--"
 }
+```

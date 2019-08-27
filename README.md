@@ -1,4 +1,5 @@
 # Judge the Judges: A Large-Scale Evaluation Study of Neural Language Models for Online Review Generation
+***Cristina Garbacea, Samuel Carton, Shiyan Yan and Qiaozhu Mei***
 
 This repository contains the experimental setup, data and annotations.
 

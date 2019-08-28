@@ -4,6 +4,7 @@
 This repository contains the experimental setup, data and annotations.
 
 # Citation
+To cite the paper, please use ths BibTeX:
 ```
 @InProceedings{
   author = 	"Garbacea, Cristina and Carton, Samuel and Yan, Shiyan, and Mei, Qiaozhu",
@@ -12,7 +13,9 @@ This repository contains the experimental setup, data and annotations.
   year = 	"2019",
   publisher = 	"Association for Computational Linguistics",
   pages = 	"--",
-  location = 	"Hong Kong",
+  location = 	"Hong Kong, China",
   url = 	"--"
 }
 ```
+
+If using the Amazon Product Reviews dataset, please refer to http://jmcauley.ucsd.edu/data/amazon and cite it accordingly.
